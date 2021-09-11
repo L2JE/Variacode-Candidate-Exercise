@@ -1,4 +1,4 @@
-# Notification Rundeck Plugin - Candidate Execise Variacode
+# Notification Rundeck Plugin - Variacode Candidate Execise
 + Author: Leonel Jesus Juarez Etchenique
 
 This is a simple Rundeck Notification plugin implementation.
