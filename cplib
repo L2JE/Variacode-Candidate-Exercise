@@ -1,0 +1,14 @@
+#!/bin/bash
+
+FILE_NAME="plugin-example-master-0.1.0_Juarez-Leonel.jar"
+RUNDECK_DIR="../rundeck/libext"
+
+if [ ! -z "$1" ]; then
+  RUNDECK_DIR="$1"
+fi
+
+if [ -f "${RUNDECK_DIR}/${FILE_NAME}" ]; then
+  rm "${RUNDECK_DIR}/${FILE_NAME}"
+fi
+cp "./build/libs/${FILE_NAME}" "${RUNDECK_DIR}/${FILE_NAME}"
+

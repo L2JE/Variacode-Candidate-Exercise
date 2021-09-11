@@ -1,0 +1,44 @@
+version = '0.1.0_Juarez-Leonel'
+defaultTasks 'clean','build'
+apply plugin: 'java'
+//apply plugin: 'groovy'
+apply plugin: 'idea'
+sourceCompatibility = 1.8
+ext.rundeckPluginVersion= '1.2'
+ext.rundeckVersion= '3.0.22-20190512'
+ext.apacheClientVersion= '4.5.13'
+
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+
+    compile( [group: 'org.apache.httpcomponents', name: 'httpclient', version: apacheClientVersion])
+
+    compile( [group: 'org.rundeck', name: 'rundeck-core', version: rundeckVersion, ext:'jar'])
+
+    testCompile(
+        [group: 'junit', name: 'junit', version: '3.8.1',ext:'jar']
+    )
+    testCompile 'org.mockito:mockito-all:1.8.5'
+
+    //testCompile "org.codehaus.groovy:groovy-all:2.3.7"
+    //testCompile "org.spockframework:spock-core:0.7-groovy-2.0"
+}
+
+ext.pluginClassNames='com.example.rundeck.plugin.example.MyNotificationPlugin'
+jar {
+    manifest {
+        attributes 'Rundeck-Plugin-Classnames': pluginClassNames
+        attributes 'Rundeck-Plugin-File-Version': version
+        attributes 'Rundeck-Plugin-Version': rundeckPluginVersion, 'Rundeck-Plugin-Archive': 'true'
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.4.1'
+}
+
