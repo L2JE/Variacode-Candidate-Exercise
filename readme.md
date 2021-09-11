@@ -3,16 +3,6 @@
 
 This is a simple Rundeck Notification plugin implementation.
 
-## Building
-
-    ./gradlew build
-
-## Testing
-
-    ./gradlew check
-
-Runs all tests
-
 ## Install
 
 First, download the "Rundeck Launcher" [Rundeck](http://rundeck.org/downloads.html)
