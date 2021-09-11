@@ -1,4 +1,5 @@
-# Plugin Example
+# Notification Rundeck Plugin - Candidate Execise Variacode
++ Author: Leonel Jesus Juarez Etchenique
 
 This is a simple Rundeck Notification plugin implementation.
 
