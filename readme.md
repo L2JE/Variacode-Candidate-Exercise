@@ -5,6 +5,7 @@
 + 0_javadoc (it can also be generated from gradle)
 + 0_ClassDiagram_Plugin.pdf
 
+
 This is a simple Rundeck Notification plugin implementation.
 
 ## Install
