@@ -1,7 +1,7 @@
 # Notification Rundeck Plugin - Variacode Candidate Execise
 + Author: Leonel Jesus Juarez Etchenique
 
-### Documentacion
+### Documentation
 + 0_javadoc (it can also be generated from gradle)
 + 0_ClassDiagram_Plugin.pdf
 
