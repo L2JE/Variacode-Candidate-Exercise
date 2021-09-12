@@ -17,10 +17,10 @@ First, download the "Rundeck Launcher" [Rundeck](http://rundeck.org/downloads.ht
     java -jar rundeck-launcher-2.10.2.jar
 
 ## See the results every time you make a change while Rundeck is running
-Building the project and copying the .jar to Rundeck directory
+Building the project and copying the .jar to the Rundeck external libraries directory
     
     ./gradlew build
     ./cplib path/to/rundeck/libext
 
-If you place rundeck directory right next to project root you can run ./cplib without any parameters
+If you place rundeck directory right next to the project root you can run ./cplib without any parameters
 
