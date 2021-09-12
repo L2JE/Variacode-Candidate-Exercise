@@ -22,5 +22,5 @@ Building the project and copying the .jar to the Rundeck external libraries dire
     ./gradlew build
     ./cplib path/to/rundeck/libext
 
-If you place rundeck directory right next to the project root you can run ./cplib without any parameters
+If you place rundeck directory right next to the project root you can simply run ./cplib without any parameters
 
